@@ -1,0 +1,1 @@
+INFO     logger:test_origin.py:45 zcbj-2编辑接口{'code': 405, 'body': {'code': 405, 'success': False, 'data': {}, 'msg': "Request method 'GET' not supported"}, 'cookies': {}}

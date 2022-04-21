@@ -1,0 +1,1 @@
+[32mINFO    [0m logger:test_login.py:22 login-2登录测试2{'code': 405, 'body': {'code': 405, 'success': False, 'data': {}, 'msg': "Request method 'GET' not supported"}, 'cookies': {}}

@@ -1,0 +1,1 @@
+[32mINFO    [0m logger:test_origin.py:28 ywzc_1正常新增政策文件{'code': 200, 'body': {'code': 200, 'success': True, 'data': {}, 'msg': '操作成功'}, 'cookies': {}}

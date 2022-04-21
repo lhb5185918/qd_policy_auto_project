@@ -1,0 +1,1 @@
+INFO     logger:test_origin.py:28 ywzc_2正常新增政策文件{'code': 400, 'body': {'code': 400, 'success': False, 'data': {}, 'msg': '服务异常'}, 'cookies': {}}
