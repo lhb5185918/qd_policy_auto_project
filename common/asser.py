@@ -8,3 +8,8 @@ class Result:
         elif code != 200:
             result = '接口执行失败{}'.format(body)
         return result
+
+
+
+
+

@@ -4,7 +4,7 @@ import pytest
 import requests
 from util.request_util import Requests
 from util.mysql_util import Pysql_util
-from util.read_case import get_case
+from util.read_case import Case_operation
 
 
 @pytest.fixture(scope="function")
@@ -23,11 +23,21 @@ def get_token():  # 获取token的前置脚本
 
 @pytest.fixture(scope="function")
 def get_policy_id():
-    res = get_case(case_path, '原文政策新增测试用例')
+    res = Case_operation().get_case(case_path, '原文政策新增测试用例')
     result = []
+    data_result=[]
     for i in res:
         id = json.loads(i['data'])['policyTitle']
         sql = "select id from p_policy_original_info where policy_title =" + "'" + id + "'" + "and is_deleted = 0;"
         res1 = Pysql_util().singal_select(sql=sql)
         result.append(res1)
-    return result
+        for i in result:
+            r={}
+            if i!=None:
+                r['policyId'] = i['id']
+                r['policyType']="1"
+        if i!=None:
+            data_result.append(r)
+    return data_result
+
+

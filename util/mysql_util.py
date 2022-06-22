@@ -1,5 +1,4 @@
 from config.database import db
-from util.read_case import get_case
 import pymysql
 class Pysql_util:
     def __init__(self):
@@ -13,7 +12,7 @@ class Pysql_util:
             db.rollback()
         return self.ob.fetchone()
 
-    def more_select(self,sql):
+    def lot_select(self,sql):
         try:
             self.ob.execute(sql)
         except:

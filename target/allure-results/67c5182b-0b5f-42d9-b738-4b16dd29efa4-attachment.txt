@@ -1,1 +1,0 @@
-INFO     logger:test_login.py:22 login-5登录测试5{'code': 200, 'body': {'error_code': 401, 'error_description': 'no client information in request header'}, 'cookies': {}}
